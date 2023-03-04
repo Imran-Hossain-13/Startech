@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-color: #f1f1f1;
+}
+$color : orangered;
+
+@import "component/header";
+@import "component/menuShop";
+@import "component/section-one";
+@import "component/section-two";
+@import "component/section-three";
+@import "component/section-four";
+@import "component/footer";

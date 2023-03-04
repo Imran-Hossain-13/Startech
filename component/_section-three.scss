@@ -1,0 +1,157 @@
+.section-three{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .text-div{
+        text-align: center;
+    }
+    .all-cart-box{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        .cart-box{
+            position: relative;
+            margin: 10px 5px;
+            width:  260px;
+            .discount{
+                width: 90px;
+                position: absolute;
+                top: 10px;
+                background-color: rgb(102, 0, 139);
+                border-radius: 0 32px 32px 0;
+                color: white;
+                font-size: 12px;
+                padding: 3px;
+                .ff{
+                    margin-left: 15px;
+                    p{  
+                        color: white;
+                        font-size: 15px;
+
+                    }
+                    #save-price{
+                        margin-left: 5px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+            .img-div{
+                background-color: white;
+                border-radius: 10px 10px 0 0;
+                // display: flex;
+                // justify-content: center;
+                text-align: center;
+                height: 240px;
+                img{
+                    border-radius: 10px 10px 0 0;
+                    width: 90%;
+                    height: 100%;
+                }
+            }
+            .text{
+                background-color: white;
+                margin-top: 2px;
+                border-radius: 0 0 10px 10px;
+                padding: 22px 10px;
+                height: 190px;
+                position: relative;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: $color;
+                        border-bottom: 1px solid $color;
+                    }
+                }
+               .price{
+                    display: flex;
+                    margin-top: 10px;
+                    padding: 0;
+                    color: $color;
+                    position: absolute;
+                    bottom: 20px;
+                    span{
+                        font-weight: bold;
+                    }
+                    i{
+                        margin-top: 5px;
+                    }
+                    .del-span{
+                        color: rgb(166, 166, 166);
+                        font-weight: 300;
+                        margin-left: 8px;
+                    }
+                    .fa-cart-arrow-down{
+                        margin-left: 70px;
+                        color: black;
+                        font-size: 22px;
+                        &:hover{
+                            color: $color;
+                            transition: .6s;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                box-shadow: 0 0 4px 4px rgb(202, 201, 201);
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1370px){
+    .section-three{
+        .all-cart-box{
+            padding: 0 6px;
+            column-gap: 10px;
+            .cart-box{
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1300px){
+    .section-three{
+        .all-cart-box{
+            padding: 0 40px;
+            .cart-box{
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1250px){
+    .section-three{
+        .all-cart-box{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
+}
+@media only screen and (max-width: 1050px){
+    .section-three{
+        .all-cart-box{
+            padding: 0 17px;
+        }
+    }
+}
+@media only screen and (max-width: 960px){
+    .section-three{
+        .all-cart-box{
+            padding: 0 20px;
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+}
+@media only screen and (max-width: 680px){
+    .section-three{
+        .all-cart-box{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+@media only screen and (max-width: 390px){
+    .section-three{
+        .all-cart-box{
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+}

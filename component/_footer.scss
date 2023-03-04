@@ -1,0 +1,176 @@
+footer{
+    background-color: rgb(3, 3, 40);
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    .footer-all-item{
+        width: 1290px;
+        .contuct-info{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            // column-gap: 40px;
+            row-gap: 40px;
+            .support-div{
+                h6{
+                    color: white;
+                    margin-bottom: 10px;
+                }
+                .box{
+                    border: 2px solid rgb(75, 75, 75);
+                    border-radius: 70px;
+                    margin: 20px 0;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: gray;
+                        i{
+                            font-size: 20px;
+                            padding: 0 10px;
+                        }
+                        .text-box{
+                            border-left: 1px solid rgb(71, 71, 71);
+                            padding: 0 10px;
+                            p{
+                                font-size: 13px;
+                                padding: 0;
+                                margin: 0;
+                            }
+                            .bold{
+                                font-size: 19px;
+                                color: $color;
+                            }
+                        }
+                    }
+                    &:hover{
+                        border: 2px solid $color;
+                    }
+                }
+            }
+            .about{
+                // margin-left: 40px;
+                h6{
+                    color: white;
+                }
+                li{
+                    list-style-type: none;
+                    font-size: 13px;
+                    margin: 23px 0;
+                    a{
+                        text-decoration: none;
+                        color: gray;
+                    }
+                    &:hover{
+                        a{
+                            color: $color;
+                            border-bottom: 1px solid $color;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+            .df-marg{
+                margin-top: 18px;
+            }
+            .location-text{
+                color: white;
+                p{
+                    font-size: 15px;
+                    margin-top: 18px;
+                    color: gray;
+                }
+                a{
+                    color: $color;
+                }
+                .icon-div{
+                    a{
+                        color: blue;
+                        i{
+                            font-size: 30px;
+                            margin: 10px 0;
+                            margin-right: 7px;
+                        }
+                    }
+                }
+            }
+        }
+        hr{
+            color: white;
+        }
+        .our-information{
+            display: flex;
+            justify-content: space-between;
+            p{
+                color: gray;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1330px){
+    footer{
+        .footer-all-item{
+            width: 100%;
+            padding: 0 17px;
+        }  
+    }
+}
+@media only screen and (max-width: 1300px){
+    footer{
+        .footer-all-item{
+            padding: 0 44px;
+        }  
+    }
+}
+@media only screen and (max-width: 1300px){
+    footer{
+        .footer-all-item{
+            padding: 0 17px;
+            .contuct-info{
+                grid-template-columns: repeat(4,1fr);
+            }
+        }  
+    }
+}
+@media only screen and (max-width: 1020px){
+    footer{
+        .footer-all-item{
+            .contuct-info{
+                grid-template-columns: repeat(3,1fr);
+            }
+            .our-information{
+                display: block;
+            }
+        }  
+    }
+}
+@media only screen and (max-width: 771px){
+    footer{
+        .footer-all-item{
+            padding: 0 40px;
+            .contuct-info{
+                grid-template-columns: repeat(2,1fr);
+                row-gap: 20px;
+                .about{
+                    margin-left: 0 !important;
+                }
+            }
+        }  
+    }
+}
+@media only screen and (max-width: 580px){
+    footer{
+        .footer-all-item{
+            padding: 0 50px;
+            .contuct-info{
+                grid-template-columns: repeat(1,1fr);
+                .support-div{
+                    .box{
+                        width: 260px;
+                    }
+                }
+            }
+        }  
+    }
+}

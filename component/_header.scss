@@ -1,0 +1,230 @@
+header{
+    .header-one{
+        display: flex;
+        justify-content: center;
+        padding: 8px 0;
+        background-color: rgb(1, 1, 42);
+        margin: 0;
+        .my-input-div{
+            margin: 0 30px;
+            margin-top: 13px;
+            // margin-left: 20px;
+            .input-group{
+                height: 40px;
+                width: 500px;
+                .form-control{
+                    border-right: none !important;
+                    box-shadow: none;
+                    font-size: 18px;
+                }
+                .input-group-text{
+                    background-color: white;
+                }
+            }
+        }
+        .icon-box{
+            a{
+                display: flex;
+                align-items: center;
+                margin: 0 15px;
+                text-decoration: none;
+                i{
+                    font-size: 20px;
+                    color: $color;
+                }
+                .fa-bolt-lightning{
+                    animation-name: bgchange;
+                    animation-duration: 2s;
+                    animation-iteration-count: infinite;
+                }
+                .text{
+                    margin-top: 10px;
+                    margin-left: 15px;
+                    h6{
+                        color: white;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 14px;
+                    }
+                    p{
+                        color: gray;
+                        font-size: 11px;
+                        &:hover{
+                            color: $color;
+                        }
+                    }
+                }
+            }
+        }
+        .pc-btn{
+            border: none;
+            height: 50px;
+            padding: 15px 35px;
+            margin-top: 6px;
+            margin-left: 18px;
+            background-image: linear-gradient(to right top,blue,skyblue);
+            color: white;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            border-radius: 5px;
+            &:hover{
+                background-image: linear-gradient(to bottom left,blue,skyblue);
+            }
+        }
+    }
+}
+.header-two{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 20px;
+    background-color: rgb(1, 1, 42);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    .offcan-div{
+        .offcan-btn{
+            i{
+                color: white;
+                font-size: 26px;
+            }
+        }
+        .offcanvas{
+            width: 270px;
+            margin-top: 66px;
+            overflow-y: scroll;
+            text-align: start;
+            .off-ul{
+                .off-item{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: -32px;
+                    padding: 0 20px;
+                    border-bottom: 1px solid rgb(206, 206, 206);
+                    p{
+                        margin: 0;
+                    }
+                    h6{
+                        font-size: 40px;
+                        font-weight: lighter;
+                        color: rgb(86, 86, 86);
+                    }
+                    &:hover{
+                        p{
+                            color: $color;
+                        }
+                    }
+                }
+                .off-item-elem{
+                    margin-left: -32px;
+                    display: none;
+                    .off-item2{
+                        border-bottom: 1px solid rgb(206, 206, 206);
+                        a{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            margin-left: 12px;
+                            padding: 0 20px;
+                            color: gray;
+                            text-decoration: none;
+                            font-size: 14px;
+                            p{
+                                margin: 0;
+                            }
+                            h6{
+                                font-size: 30px;
+                                font-weight: lighter;
+                            }
+                        }
+                    }
+                }
+            }
+            .offcanvas-top{
+                overflow-y: unset;
+                // background-color: red;
+                position: absolute;
+                top: -7px;
+            }
+        }
+    }
+    .logo-image-div{
+        img{
+            height: 40px;
+        }
+    }
+    .icon-div{
+        .search-cart{
+            color: white;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+        .input-group{
+            position: absolute;
+            width: 220px;
+            right: 12px;
+            top: 67px;
+            box-shadow: 0 0 9px 0.5px gray;
+            z-index: 3;
+            display: none;
+            .form-control{
+                border-radius: 0!important;
+                box-shadow: none;
+                border-right: 1px solid gray!important;
+                padding: 8px 0;
+                font-size: 17px;
+            }
+            span{
+                background-color: white;
+                border-radius: 0;
+                &:hover{
+                    background-color: $color;
+                    color: white;
+                }
+            }
+        }
+        .bucket{
+            margin: 0 5px;
+        }
+        p{
+            height: 20px;
+            width: 20px;
+            background-color: $color;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            top: 6px;
+            right: 10px;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1300px){
+    header{
+        .header-one{
+            display: none;
+        }
+    }
+    .header-two{
+        display: flex;
+    }
+}
+
+
+@keyframes bgchange {
+    to{
+        color: white;
+        transition: 1s;
+    }
+    from{
+        color: $color;
+        transition: 1s;
+    }
+}

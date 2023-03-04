@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.admin-h3{
+    background-color: rgb(50, 50, 96);
+    color: white;
+    /* padding: 10px 0; */
+    display: grid;
+    align-items: center;
+    height: 50px;
+}
+.nav{
+    background-color: rgb(41, 13, 68);
+    height: calc(100vh - 55px);
+    width: 250px;
+    margin-top: -8px;
+    position: relative;
+}
+.nav img{
+    width: 80px;
+    margin-top: 10px;
+}
+.nav .m-top{
+    margin-top: 30px !important;
+}
+.nav .nav-link{
+    /* background-color: red; */
+    padding: 10px 0;
+    margin: 0 10px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: -7px !important;
+    color: white !important;
+}
+.nav .active{
+    background-color: #efefef !important;
+    color: rgb(36, 11, 59) !important;
+    font-size: 17px !important; 
+    /* padding: 10px 0; */
+    /* margin: 0 10px; */
+    border-radius: 7px 0px 0px 7px ;
+}
+.btn-div {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+}
+.btn-div .fa-arrow-right-from-bracket{
+    color: white;
+    margin-right: 8px;
+    font-size: 25px;
+}
+.btn-div .log-btn{
+    color: white;
+    background-color: rgb(41, 13, 68);
+    font-size: 16px;
+    font-weight: 600;
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+.btn-div .log-btn:hover{
+    background-color: white;
+    color: rgb(36, 11, 59);
+    transition: 0.50s;
+}
+.nav .nav-link i{
+    margin-right: 10px;
+}
+.tab-content{
+    width: 100%;
+    margin-top: -8px;
+}
+.cart-pannel .add-cart-div{
+    height: calc(100vh - 55px);
+    background-color: #efefef;
+}
+.tab-content .tab-pane .no-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efefef;
+    height: calc(100vh - 55px);
+}
+.tab-content .tab-pane .no-service .box{
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    background-color: #efefef;
+    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR84aavSy1uikyjJU6OZL0iwVQImHhtCPYY3g&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    box-shadow: 0 0 4px 4px rgb(182, 179, 179);
+}
+.tab-content .tab-pane .no-service .box .fa-exclamation{
+    font-size: 70px;
+    height: 90px;
+    width: 90px;
+    margin-top: 50px;
+    color: rgb(244, 157, 95);
+    border: 4px solid rgb(244, 157, 95);
+    border-radius: 50%;
+}
+.tab-content .tab-pane .no-service .box .text p{
+    font-size: 20px;
+    margin-top: 15px;
+    /* color: white; */
+}
